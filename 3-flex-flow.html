@@ -16,7 +16,16 @@
         flex-flow:row nowrap;
     }
     .wrap{
-        flex-flow: wrap;
+        flex-flow: row wrap;
+    } 
+    .wrap-reverse{
+        flex-flow: row wrap-reverse;
+    }
+    .r-nowrap{
+        flex-flow: row-reverse nowrap;
+    }
+    .r-wrap{
+        flex-flow: row-reverse wrap;
     }
     .item{
         background-color: blueviolet;
@@ -26,6 +35,9 @@
         width: 100px;
         height: 50px;
         line-height: 50px;
+    }
+    .r-r{
+        flex-flow: row-reverse wrap-reverse;
     }
 </style>
 
@@ -40,8 +52,8 @@
         <div class="item">5</div>
 
     </div>
-    <h1>default:nowrap</h1>
-    <div class="flex-container default">
+    <h1>wrap</h1>
+    <div class="flex-container wrap">
         <div class="item">1</div>
         <div class="item">2</div>
         <div class="item">3</div>
@@ -49,5 +61,42 @@
         <div class="item">5</div>
 
     </div>
+    <h1>wrap-reverse</h1>
+    <div class="flex-container wrap-reverse">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+    </div>
+    <h1>nowrap reverse</h1>
+    <div class="flex-container r-nowrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+    </div>
+    <h1>wrap reverse</h1>
+    <div class="flex-container r-wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+    </div>
+    <h1>wrap reverse</h1>
+    <div class="flex-container r-r">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+    </div>
+
 </body>
 </html>

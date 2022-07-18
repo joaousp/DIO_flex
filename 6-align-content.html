@@ -4,9 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundamentos - Align content</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: flex;
+            max-width: 300px;
+            height: 400px;
+            flex-wrap: wrap;
+
+
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 4px;
+            color: white;
+            text-align: center;
+            padding: 0 5px;
+            flex: 1;
+
+        }
+        .center{
+            align-content: center;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+    </style>
 </head>
 <body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item"> Aenean aliquet magna libero, eget porttitor commodo in</div>
+        <div class="item">Etiam lectus sem, malesuada vitae in, imperdiet ultricies purus. </div>
+        <div class="item">consectetur adipiscing elit. Integer id enim iaculis, efficitur enim in, fringilla est.  </div>
+        <div class="item">consectetur adipiscing elit. Integer id enim iaculis, efficitur enim in,</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+    </div>
+    <p>center</p>
+    <div class="container center">
+        <div class="item"> Aenean aliquet magna libero, eget porttitor commodo in</div>
+        <div class="item">Etiam lectus sem, malesuada vitae in, imperdiet ultricies purus. </div>
+        <div class="item">consectetur adipiscing elit. Integer id enim iaculis, efficitur enim in, fringilla est.  </div>
+        <div class="item">consectetur adipiscing elit. Integer id enim iaculis, efficitur enim in,</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+    </div>
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item"> Aenean aliquet magna libero, eget porttitor commodo in</div>
+        <div class="item">Etiam lectus sem, malesuada vitae in, imperdiet ultricies purus. </div>
+        <div class="item">consectetur adipiscing elit. Integer id enim iaculis, efficitur enim in, fringilla est.  </div>
+        <div class="item">consectetur adipiscing elit. Integer id enim iaculis, efficitur enim in,</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+    </div>
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item"> Aenean aliquet magna libero, eget porttitor commodo in</div>
+        <div class="item">Etiam lectus sem, malesuada vitae in, imperdiet ultricies purus. </div>
+        <div class="item">consectetur adipiscing elit. Integer id enim iaculis, efficitur enim in, fringilla est.  </div>
+        <div class="item">consectetur adipiscing elit. Integer id enim iaculis, efficitur enim in,</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+    </div>
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item"> Aenean aliquet magna libero, eget porttitor commodo in</div>
+        <div class="item">Etiam lectus sem, malesuada vitae in, imperdiet ultricies purus. </div>
+        <div class="item">consectetur adipiscing elit. Integer id enim iaculis, efficitur enim in, fringilla est.  </div>
+        <div class="item">consectetur adipiscing elit. Integer id enim iaculis, efficitur enim in,</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+    </div>
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item"> Aenean aliquet magna libero, eget porttitor commodo in</div>
+        <div class="item">Etiam lectus sem, malesuada vitae in, imperdiet ultricies purus. </div>
+        <div class="item">consectetur adipiscing elit. Integer id enim iaculis, efficitur enim in, fringilla est.  </div>
+        <div class="item">consectetur adipiscing elit. Integer id enim iaculis, efficitur enim in,</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+        <div class="item"> Aenean aliquet magna libero, eget porttitor</div>
+    </div>
     
 </body>
 </html>
